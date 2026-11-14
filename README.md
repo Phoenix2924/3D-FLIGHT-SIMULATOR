@@ -58,7 +58,17 @@ A real-time, wireless 3D flight simulator powered by an **ESP8266**, an **MPU605
 3. **3D Rendering (Three.js):** The browser polls `/data` every 30ms to update the 3D aircraft's orientation, turning rate (yaw from banking), forward motion, and smooth chase camera.
 
 ---
+## Circuit Diagram 
+   +-----------------------+             +-----------------------+
 
+   |   ESP8266 (NodeMCU)   |             |        MPU6050        |
+   |                       |             |                       |
+   |                  3V3  |------------>| VCC                   |
+   |                  GND  |------------>| GND                   |
+   |          D2 (GPIO 4)  |------------>| SDA                   |
+   |          D1 (GPIO 5)  |------------>| SCL                   |
+   +-----------------------+             +-----------------------+
+---
 ##  Project Structure
 
 ```text
