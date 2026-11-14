@@ -1,4 +1,4 @@
-// ESP8266 + MPU6050 flight controller for flight_sim.py
+
 // Wiring (NodeMCU / Wemos D1 mini):
 //   MPU6050 VCC -> 3V3
 //   MPU6050 GND -> GND
@@ -10,8 +10,8 @@
 #include <WiFiUdp.h>
 #include <Wire.h>
 
-const char* AP_SSID = "ESP-FlightSim";   // change to your network name
-const char* AP_PASS = "12345678";        // at least 8 characters
+const char* AP_SSID = "YOUR_AP_SSID";   // change to your network name
+const char* AP_PASS = "YOUR_AP_PASSWORD";        // at least 8 characters
 
 IPAddress broadcastIP(192, 168, 4, 255);
 const unsigned int UDP_PORT = 4210;
