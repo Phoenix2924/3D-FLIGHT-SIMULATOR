@@ -1,0 +1,23 @@
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Auto-downloaded Three.js dependency
+three.min.js
+
+# Arduino IDE build artifacts
+*.bin
+*.elf
+*.hex
+*.map
+build/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
